@@ -65,6 +65,10 @@ div#credit-container {
     border: 2px solid red;
 }
 
+.field:focus {
+    box-shadow: 1px 1px 12px 3px var(--highlight-color);
+}
+
 #form-content {
     display: flex;
     flex-direction: column;
@@ -75,11 +79,14 @@ div#credit-container {
 fieldset#description {
     height: 45vh;
     border: none;
+    line-height: 33px;
+    letter-spacing: 2px;
+    font-family: zen-dots;
 }
 
 fieldset#description>h2 {
     position: relative;
-    top: 10rem;
+    top: 9rem;
 }
 
 fieldset#enter-info {
@@ -92,6 +99,7 @@ fieldset#enter-info {
     box-shadow: 4px 5px 12px 6px var(--highlight-color);
     position: relative;
     right: .6rem;
+    border-radius: 3px;
 }
 
 fieldset#enter-info>legend {
@@ -119,6 +127,11 @@ fieldset#submit>button {
     border-radius: 200px;
     color: aqua;
     box-shadow: 2px 2px 12px 2px var(--highlight-color);
+}
+
+fieldset#submit>button:active {
+    box-shadow: 0px 0px 12px 12px var(--highlight-color);
+    transform: translateY(2px);
 }
 
 div#row-one {
